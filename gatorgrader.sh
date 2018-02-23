@@ -163,7 +163,7 @@ if [ "$CHECK" = true ]; then
                                      --checkfiles RunCampaign.java --fragments "println(" --fragmentcounts 3
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least three commits
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 3
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 14
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
