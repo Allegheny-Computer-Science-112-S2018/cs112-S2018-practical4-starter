@@ -162,8 +162,8 @@ if [ "$CHECK" = true ]; then
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicalfour/experiment \
                                      --checkfiles RunCampaign.java --fragments "println(" --fragmentcounts 3
   determine_exit_code $?
-  # --> GatorGrader CHECK: the repository contains at least three commits
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 14
+  # --> GatorGrader CHECK: the repository contains at least three commits beyond the current total
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 15
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
